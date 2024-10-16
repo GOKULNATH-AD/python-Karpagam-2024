@@ -1,4 +1,4 @@
-# slot-01 | day-01
+# slot-01 |  day-01
 
 ## all topics that are going to be covered
 

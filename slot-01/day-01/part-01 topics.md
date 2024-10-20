@@ -256,80 +256,6 @@ for i in range(n):
 #  1,2,3,4,
 ```
 
-NOTE: Below code will remove last `,`
-
-```python
-li = [1,2,3,4]
-n = len(li)
-for i in range(n):
-    if i!=n-1:
-       print(li[i],end=",")
-    else:
-       print(li[i],end="")
-#  1,2,3,4
-```
-
-`print` flush example ( out of scope )
-
-```python
-# sep:   string inserted between values, default a space.
-# end:   string appended after the last value, default a newline.
-# file:  a file-like object (stream); defaults to the current sys.stdout.
-# flush: whether to forcibly flush the stream.
-```
-
-```python
-# flush example
-# --------------------------------------------
-# example 1
-import time
-
-i = 0
-while i<5:
-    print(i)
-    time.sleep(1)
-# output
-# The output will be like print each i value
-# with a 1 second delay.
-# --------------------------------------------
-# example 2
-import time
-
-i = 0
-while i<5:
-    print(i,end=" ")
-    time.sleep(1)
-# output
-# The output will be like print each i value
-# side by side. But It will show the output 
-# only after 5 second
-# REASON : that is because by default flush=False,
-#   - Which means first it will store all character that should be 
-#     printing in a single line.
-#   - Then it will flush all the values to output screen
-
-# To make our code run with following scenario
-# we have to pass flush=True
-
-i = 0
-while i<5:
-    print(i,end=" ",flush=True)
-    time.sleep(1)
-# output will be same but different behavior
-```
-
-print `file` ( out of scope )
-
-```python
-# by default python will print output in output screen.
-# But instead you can print the output in other streams like in files.
-fs = open('output.txt','w')
-print('hello world!', file=fs)
-print('sample text', file=fs)
-print('End of the code', file=fs)
-# Now output will be saved in a file. Instead of output screen.
-```
-
 #### `Arithmetic operator`
 
 ### operators and data types
@@ -353,7 +279,7 @@ print('End of the code', file=fs)
 |13     |     and    |      L-R    |
 |14     |       or  |      L-R    |
 |15     |   if else ( conditional expression )      |    R-L     |
-|16     |   :=      |R-L         |  
+|16     |   =      |R-L         |  
 
 ##### list of operators
 
@@ -412,7 +338,7 @@ print('End of the code', file=fs)
 >>> a = -5%-2 # 
 ```
 
-`🏷️ will be covered at end of class`
+- while using modulus operator, result sign will be same as denominator sign.
 
 ---
 
@@ -453,11 +379,10 @@ print('End of the code', file=fs)
 ```python
 >>>  -3**2
 ```
+---
 
 - why in python we use # for comments
 - why not `//` for comments
-
-`🏷️ will be covered at end of class`
 
 ---
 
@@ -473,8 +398,6 @@ float
 bool
 complex     
 ```
-
-- Numeric type basics is enough for problem solving
 
 ---
 

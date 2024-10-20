@@ -2,8 +2,6 @@
 
 ## problem-01
 
-    💡question:
-     
     Write a code to print your 
     name , roll number ,
     CGPA, gender , date of birth
@@ -16,10 +14,24 @@
     Gender : M
     Date of birth : 24/9/2000
 
+```python
+# Taking input from the user and storing it in variables
+name = input("Enter your name: ")
+roll_no = input("Enter your roll number: ")
+cgpa = input("Enter your CGPA: ")
+gender = input("Enter your gender (M/F): ")
+dob = input("Enter your date of birth (dd/mm/yyyy): ")
+
+# Displaying the details
+print("\nName :", name)
+print("Roll.no :", roll_no)
+print("CGPA :", cgpa)
+print("Gender :", gender)
+print("Date of birth :", dob)
+```
+
 ## problem-02
 
-    💡question:
-     
     Given radius in decimal point ,write a code to find
     the diameter, area and circumference of the circle
     Sample input : 2.3
@@ -33,6 +45,23 @@
     Area = 113.03999999999999
     Circumference = 37.68
 
+```python
+import math
+
+# Taking radius input from the user
+radius = float(input("Enter the radius of the circle: "))
+
+# Calculating diameter, area, and circumference
+diameter = 2 * radius
+area = math.pi * (radius ** 2)
+circumference = 2 * math.pi * radius
+
+# Displaying the results
+print("Diameter =", diameter)
+print("Area =", area)
+print("Circumference =", circumference)
+```
+
 ## problem-03
 
     Given with temperature ‘n’ in Celsius the challenge
@@ -42,6 +71,18 @@
     Sample output : 212.0
     Sample input 2: -40
     Sample output: -40.0
+
+```python
+# Taking temperature input in Celsius from the user
+celsius = float(input("Enter temperature in Celsius: "))
+
+# Converting Celsius to Fahrenheit
+fahrenheit = (celsius * 9/5) + 32
+
+# Displaying the result
+print("Fahrenheit =", fahrenheit)
+```
+
 
 ## problem-04
 
@@ -56,27 +97,25 @@
     Days: 3
     5. You are given a
 
-<!-- ```python
-def convert_days(total_days):
-    # Calculating years, weeks and remaining days
-    years = total_days // 365
-    remaining_days = total_days % 365
-    weeks = remaining_days // 7
-    days = remaining_days % 7
-    
-    return years, weeks, days
+```python
+# Taking the number of days as input from the user
+days_input = int(input("Number of days: "))
 
-# Taking input from the user
-total_days = int(input("Number of days: "))
+# Constants for calculations
+days_in_year = 365
+days_in_week = 7
 
-# Getting the conversion result
-years, weeks, days = convert_days(total_days)
+# Calculating years, weeks, and remaining days
+years = days_input // days_in_year
+remaining_days = days_input % days_in_year
+weeks = remaining_days // days_in_week
+days = remaining_days % days_in_week
 
-# Printing the results
-print(f"Years: {years}")
-print(f"Weeks: {weeks}")
-print(f"Days: {days}")
-``` -->
+# Displaying the result
+print("Years:", years)
+print("Weeks:", weeks)
+print("Days:", days)
+```
 
 ## problem-05
 
@@ -103,29 +142,27 @@ print(f"Days: {days}")
 
             Sample input: 918765432109
             Sample output: 3210987654
-<!-- 
-```python
-def process_mobile_number(mobile_number):
-    # Step 1: Check if the number includes a country code (12 digits) and ignore it
-    if len(mobile_number) == 12 and mobile_number.startswith("91"):
-        mobile_number = mobile_number[2:]
-    
-    # Step 2: Split the 10-digit number into two parts
-    left_part = mobile_number[:5]
-    right_part = mobile_number[5:]
-    
-    # Step 3: Swap the two parts
-    new_number = right_part + left_part
-    
-    return new_number
 
-# Taking input from the user
+```python
+# Taking the mobile number as input from the user
 mobile_number = input("Enter the mobile number: ")
 
-# Getting the processed mobile number
-new_mobile_number = process_mobile_number(mobile_number)
+# Check if the number has 12 digits (including country code)
+if len(mobile_number) == 12 and mobile_number.startswith("91"):
+    # Ignore the country code, keep only the last 10 digits
+    mobile_number = mobile_number[2:]  # Keep only the last 10 digits
 
-# Printing the result
-print(f"Processed mobile number: {new_mobile_number}")
+# Ensure the number is 10 digits
+if len(mobile_number) != 10:
+    print("Invalid mobile number. Please enter a 10-digit mobile number or a 12-digit number with country code.")
+else:
+    # Splitting the mobile number into left and right parts
+    left_part = mobile_number[:5]  # First 5 digits
+    right_part = mobile_number[5:]  # Last 5 digits
 
-``` -->
+    # Swapping the parts to create a new number
+    new_number = right_part + left_part
+
+    # Displaying the result
+    print(new_number)
+```

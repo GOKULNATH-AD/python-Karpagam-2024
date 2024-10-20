@@ -28,6 +28,35 @@ interpreter
     💭 who is father of computer ? charles babage. 
     Why he is called as father of computer ? because he is the one who invented first working computer which will do math calculation.
 
+## computer 
+- A computer is an electronic device
+- It operates under the control of instructions.
+
+## Functionalities of computer:
+- takes data as input
+- stores the data/instructions in its memory and use them when required.
+- process the data and converts it into useful information
+- generates the output
+
+## computer componenets:
+- Every computers consists of hardware and software.
+  
+## hardware
+- computer hardware is the collection of physical elements that builds a computer system.
+- Computer hardware refers to the physical elements that builds a computer system.
+- computer hardware refers to the physical parts or components of a computer such as the monitor, mouse, keyboard, computer data storage, hard drive disk ( HDD), system unit(graphic cards, sound cards, memory, motherboard and chips ). and lot more. All of which are physical objects that can be touched.
+
+## input devices
+- input devices are essential for interacting with a computer allowing us to input data commands and other information.
+- input device translate data from that human understand to one that the computer can work with most common are keyboard and mouse.
+- Example for input devices are : keyboard, mouse, joystick, microphone, numeric keyboard, camera, webcame.
+
+## Output devices
+- output devices are essential for conveying information from the computer to the user.
+- output devices converts the electronically generated information into human readable form.
+- Example of output devices are: CRT monitor, Speakers, Printers, projector.
+  
+
 #### `Language introduction`
 
 - 🏷️ Python is an interpreter language.
@@ -106,14 +135,14 @@ print(a) # 100
 
 ###### basic single values
 
-    input: `1`
-    code: `int(input())`
+    input: 1
+    code: int(input())
     
-    input: `12.12`
-    code: `float(input())`
+    input: 12.12
+    code: float(input())
     
-    input: `Hello world`
-    code: `input()`
+    input: Hello world
+    code: input()
 
 ##### multiple values in single line
 

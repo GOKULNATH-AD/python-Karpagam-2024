@@ -4,7 +4,6 @@
 
 - In case of strings
   - usage of single, double and triple quotes
-  - freq used method is : `.format()`
   - and `.split()` which is used while getting input values.
   - `"hello"*3` for multiplying strings.
 

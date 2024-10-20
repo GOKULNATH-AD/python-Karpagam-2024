@@ -8,7 +8,6 @@
 - Difference between Compiler &
 interpreter
 - Assignment operator intro
-- Walrus operator
 - print function
 - Arithmetic operator
 - Data types

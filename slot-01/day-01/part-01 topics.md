@@ -91,7 +91,7 @@ b = 123
 print(id(a)) #  140714564323576
 print(id(b)) #  140714564323576
 ```
-
+<!-- 
 #### `Walrus operator`
 
 - walrus operator ( := )
@@ -125,7 +125,7 @@ fn(a:=100)
 print(a) # 100
 ```
 
----
+--- -->
 
 #### `input and print function`
 

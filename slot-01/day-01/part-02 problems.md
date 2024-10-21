@@ -87,7 +87,6 @@ print("Fahrenheit =", fahrenheit)
     Years: 3
     Weeks: 33
     Days: 3
-    5. You are given a
 <!-- 
 ```python
 days_input = int(input("Number of days: "))

@@ -13,7 +13,7 @@
     CGPA : 7.5
     Gender : M
     Date of birth : 24/9/2000
-
+<!-- 
 ```python
 name = input("Enter your name: ")
 roll_no = input("Enter your roll number: ")
@@ -26,7 +26,7 @@ print("Roll.no :", roll_no)
 print("CGPA :", cgpa)
 print("Gender :", gender)
 print("Date of birth :", dob)
-```
+``` -->
 
 ## problem-02
 
@@ -42,7 +42,7 @@ print("Date of birth :", dob)
     Diameter = 12.000000
     Area = 113.03999999999999
     Circumference = 37.68
-
+<!-- 
 ```python
 import math
 
@@ -55,7 +55,7 @@ circumference = 2 * math.pi * radius
 print("Diameter =", diameter)
 print("Area =", area)
 print("Circumference =", circumference)
-```
+``` -->
 
 ## problem-03
 
@@ -66,14 +66,14 @@ print("Circumference =", circumference)
     Sample output : 212.0
     Sample input 2: -40
     Sample output: -40.0
-
+<!-- 
 ```python
 celsius = float(input("Enter temperature in Celsius: "))
 
 fahrenheit = (celsius * 9/5) + 32
 
 print("Fahrenheit =", fahrenheit)
-```
+``` -->
 
 
 ## problem-04
@@ -88,7 +88,7 @@ print("Fahrenheit =", fahrenheit)
     Weeks: 33
     Days: 3
     5. You are given a
-
+<!-- 
 ```python
 days_input = int(input("Number of days: "))
 
@@ -103,7 +103,7 @@ days = remaining_days % days_in_week
 print("Years:", years)
 print("Weeks:", weeks)
 print("Days:", days)
-```
+``` -->
 
 ## problem-05
 
@@ -130,7 +130,7 @@ print("Days:", days)
 
             Sample input: 918765432109
             Sample output: 3210987654
-
+<!-- 
 ```python
 mobile_number = input("Enter the mobile number: ")
 
@@ -146,4 +146,4 @@ else:
     new_number = right_part + left_part
 
     print(new_number)
-```
+``` -->

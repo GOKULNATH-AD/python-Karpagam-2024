@@ -5,31 +5,6 @@
 write a code to print your 
 name, roll number, CGPA, gender, date of birth
 
-`sample input:`
-
-    Enter your name: harish
-    Enter your roll number: 64
-    Enter your CGPA: 4.53
-    Enter your gender (M/F): M
-    Enter your date of birth (dd/mm/yy): 14/03/2002
-
-`sample output`
-
-    Name : harish
-    Roll.no : 64
-    CGPA : 4.53
-    Gender : M
-    Date of birth : 14/03/2002
-
-
----
-
-
-## problem 01
-
-write a code to print your 
-name, roll number, CGPA, gender, date of birth
-
 `sample input`
 
     Enter your name: harish

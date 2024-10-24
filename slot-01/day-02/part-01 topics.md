@@ -69,7 +69,6 @@ print(c) # 10
 
 #### `float`
 
-- float will follow double precision
 - float data will only follow "decimal representation"
 - `0b10.10` is wrong becase, here this is meaning less,
   - and in python you can use 0b, 0B, 0x, 0X, 0o, 0O in integer type only.

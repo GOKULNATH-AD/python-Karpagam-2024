@@ -29,7 +29,7 @@ print(c)
 ```md
      Data types
        /      \
-  Numberic    string datatype
+  Numeric    string datatype
   /                \
 int               str
 float

@@ -51,7 +51,7 @@ print(amount) # (1,0,0)
 amount = 1_00_000
 print(amount) # 100000
 # 💡NOTES:
-# - only point is use underscore(_) in-between the digits
+# - only point is, use underscore(_) in-between the digits
 # - not in front or rear of digits.
 ```
 

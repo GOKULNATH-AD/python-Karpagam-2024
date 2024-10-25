@@ -14,4 +14,4 @@ Lab notes :
 <https://docs.google.com/document/d/16uF7enMSQyQAE1EgNOeaWUDUJE1OsgCDdvDI4fNOBhk/edit?tab=t.0>
 
 study ref:
-https://github.com/AvinashKumar3000/python-Karpagam-2024
+<https://github.com/avicreationstudio/python-problem-solving>

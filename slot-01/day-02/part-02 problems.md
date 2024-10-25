@@ -2,8 +2,7 @@
 
 ## problem 01
 
-    Given a series 2, 12, 36, 80, 150.. Find the n-th
-    term of the series.
+    Given a series 2, 12, 36, 80, 150.. Find the n-th term of the series.
     Examples :
     Input : 2
     Output : 12
@@ -12,8 +11,7 @@
 
 ## problem 02
 
-    Find the sum of the following sequence : 2, 22,
-    222, ……… to n terms.
+    Find the sum of the following sequence : 2, 22, 222, ……… to n terms.
     Examples :
     Input : 2
     Output: 23.99868
@@ -22,8 +20,7 @@
 
 ## problem 03
 
-    Given a series 
-    12 + 32 + 52 + 72 + . . . + (2*n – 1)2, 
+    Given a series 12 + 32 + 52 + 72 + . . . + (2*n – 1)2, 
     find sum of the series.
     Examples:
     Input : n = 4

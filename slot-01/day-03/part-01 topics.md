@@ -1,10 +1,154 @@
 # SLOT-01 | day-03
 
+## `multiplication`
+
+Rules
+
+    1.    if a,b is numbers -> multiplication
+    Below are when repetition happens to string (string)
+    2.    a -> str             , b -> (int,bool)
+    3.    a -> (int, bool)m      b -> str
+    #  eg: 'hello'*3
+    gives output as 'hellohellohello'
+
+```python
+a = "hello"
+b = 3
+a*b # 'hellohellohello'
+b*a # 'hellohellohello'
+
+>>> a = "hi"
+>>> a*2
+hihi
+
+>>> a = "hi"
+>>> a * 2 * 2
+"hihi"*2
+"hihihihi"
+>>> 2 * a * 2
+"hihihihi"
+>>> 2 * 2 * a
+"hihihihi"
+```
+
+```python
+# edge cases
+>>> a = 'hello'
+>>> a * -1
+''
+>>> a * 0
+''
+>>> a * True
+'hello'
+>>> a * False
+''
+>>> a * 3.5
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'float'
+```
+
 ## `logical operators`
 
 - `and`
 - `or`
 - `not`
+
+---
+
+`and`
+
+    arg1 and arg2
+    * arg1 is non-zero then result is arg2
+    * arg1 is 0 then result is arg1
+
+```python
+# example
+>>> 5 and 10
+10
+>>> 100 and 0
+0
+>>> True and False
+False
+>>> 3.75 and 6.42
+6.42
+>>> 0 and 100
+0
+>>> 0 and 0
+0
+>>> "hello" and "hai"
+'hai'
+>>> False and True
+False
+>>> False and False
+False
+>>> " " and "hai"
+'hai'
+```
+
+---
+
+`or`
+
+    arg1 or arg2
+    * arg1 is non-zero then result is arg1
+    * arg1 is 0 then result is arg2
+
+```python
+>>> 10 or 5
+10
+>>> 7 or 0
+7
+>>> 6.5 or -5
+6.5
+>>> False or 100
+100
+>>> False or False
+False
+>>> 0 or 2.5
+2.5
+```
+
+- In case of `and` 1st is `0` don't go next.
+- In case of `or` 1st is non-zero then don't go for next.
+
+---
+
+`not`
+
+```python
+# not True -> False
+# not False -> True
+# not non-zero => False
+# not zero -> True
+# not 10 -> False
+# not 3.5 -> False
+# not False -> True
+
+# in below code, 
+# == has high priority
+# but 10==not is invalid.
+>>> a = 10 == not 100
+  File "<stdin>", line 1
+    a = 10 == not 100
+              ^^^
+SyntaxError: invalid syntax
+
+>>> 10 != (not 100)
+True
+>>> not 10 == 0
+True
+>>> not 100 and 20
+False
+>>> 10 and not 20
+False
+>>> 0 and not 100
+0
+# last scenario, as first it is zero.
+# python will not check further.
+```
+
+---
 
 ```python
 # mostly we use logical operators 

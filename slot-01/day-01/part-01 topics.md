@@ -2,6 +2,10 @@
 
 ---
 
+#### `tamil python learning`
+
+<https://www.youtube.com/watch?v=BVIoAILnZ4Q&list=PLvepBxfiuao1hO1vPOskQ1X4dbjGXF9bm>
+
 #### `why we need math for programming FUN video`
 
 <https://www.youtube.com/watch?v=sW9npZVpiMI>
@@ -20,42 +24,42 @@
 
 [Charles babbage first computer](https://www.youtube.com/watch?v=BlbQsKpq3Ak&t=177s)
 
-## computer
+## 📝 computer
 
 - A computer is an electronic device
 - It operates under the control of instructions.
 
-## Functionalities of computer
+## 📝  Functionalities of computer
 
 - takes data as input
 - stores the data/instructions in its memory and use them when required.
 - process the data and converts it into useful information
 - generates the output
 
-## computer components
+## 📝 computer components
 
 - Every computers consists of hardware and software.
 - software example : Photo shop, VSCode etc.
   
-## hardware
+## 📝 hardware
 
 - computer hardware is the collection of physical elements that builds a computer system.
 - Computer hardware refers to the physical elements that builds a computer system.
 - computer hardware refers to the physical parts or components of a computer such as the monitor, mouse, keyboard, computer data storage, hard drive disk ( HDD), system unit(graphic cards, sound cards, memory, motherboard and chips ). and lot more. All of which are physical objects that can be touched.
 
-### input devices
+### 📝 input devices
 
 - input devices are essential for interacting with a computer allowing us to input data commands and other information.
 - input device translate data from that human understand to one that the computer can work with most common are keyboard and mouse.
 - Example for input devices are : keyboard, mouse, joystick, microphone, numeric keyboard, camera, webcame.
 
-### Output devices
+### 📝 Output devices
 
 - output devices are essential for conveying information from the computer to the user.
 - output devices converts the electronically generated information into human readable form.
 - Example of output devices are: CRT monitor, Speakers, Printers, projector.
   
-#### `Language introduction`
+#### 📝 `Language introduction`
 
 - 🏷️ Python is an interpreter language.
 - 🏷️ Python is a high-level, general-purpose programming language.
@@ -63,11 +67,11 @@
 - 🏷️ Python is dynamically typed and garbage-collected.
 - 🏷️ It supports multiple programming paradigms, including structured, object-oriented and functional programming.
 
-## `Introduction to IDLE`
+## 📝 `Introduction to IDLE`
 
 - IDLE - Integrated Development and Learning Environment
 
-## `Difference between Compiler & interpreter`
+## 📝 `Difference between Compiler & interpreter`
 
 - A teacher and student example 💭
 - A teacher ask to write an essay about "AIM IN LIFE"
@@ -77,7 +81,18 @@
 - So the point is executing line by line is interpreter.
 - First check for all error then executing is compiler.
 
-## `Assignment operator intro`
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+### 📝 compiler vs interpreter
+
+|compiler  |interpreter  |
+|---------|---------|
+|c, java is compiler based language     | python is interpreter based language        |
+|1st compile fully then execute the code | line by line compile and execute.        |
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
+
+## 📝  `Assignment operator intro`
 
 - assignment operator in python.
 - Here `=` is not about assigning value to a variable. It is actually reference.
@@ -89,6 +104,8 @@ b = 123
 print(id(a)) #  140714564323576
 print(id(b)) #  140714564323576
 ```
+
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
 ## `input and print function`
 
@@ -187,9 +204,9 @@ for i in range(rc):
     matrix.append(row)
 ```
 
----
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-### `Print`
+### 📝 `Print`
 
 ```python
     
@@ -221,9 +238,11 @@ for i in range(n):
 #  1,2,3,4,
 ```
 
-### operators and data types
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-#### operators precedence and associativity
+### 📝 operators and data types
+
+#### 📝  operators precedence and associativity
 
 |precedence  |    operator  |associativity  |
 |-------|---------|---------|
@@ -254,7 +273,7 @@ for i in range(n):
   - `+x, -x` | unary plus and unary minus
   - logical not  `not` | eg: `print( not not not True )`
 
-##### list of operators
+##### 📝 list of operators
 
 - =
   - a,b = 1,2
@@ -266,7 +285,7 @@ for i in range(n):
     - `2+3*5`
   - **
 
-###### `most use cases of modulus operator`
+###### 📝 `most use cases of modulus operator`
 
 - get remaining values
   - in 100 seconds , we can say 1 minutes and remaining 40 seconds there.
@@ -280,11 +299,16 @@ for i in range(n):
 Below example shows how you can remove each digit one by one in a number.
 
 ```python
->>> 1234 % 10  # 4
->>> 1234 // 10 # 123
->>> 123 % 10   # 3
->>> 123 // 10  # 12
->>> 12 % 10    # 2
+>>> x = 1234
+>>> digit = x%10 # digit = 4
+>>> x = x//10 # x = 123
+>>> digit = x%10 # digit = 3
+>>> x = x//10 # x = 12
+>>> digit = x%10 # digit = 2
+>>> x = x//10 # x = 1
+>>> digit = x%10 # digit = 1
+>>> x = x//10 # x = 0
+>>> # we will do this until the number becomes zero.
 ```
 
 - repeat an index value within its limit
@@ -293,16 +317,29 @@ Below example shows how you can remove each digit one by one in a number.
 >>> li = [ 10, 20, 30 ]
 >>> n = len(li) # 3
 >>> i = 0
->>> li[ i%n ] # 0%3
+>>> li[ i%n ] # 0%3 = 0
 >>> i = i + 1
->>> li[ i%n ] # 1%3
+>>> li[ i%n ] # 1%3 = 1
 >>> i = i + 1
->>> li[ i%n ] # 2%3
+>>> li[ i%n ] # 2%3 = 2
 >>> i = i + 1
->>> li[ i%n ] # 3%3
+>>> li[ i%n ] # 3%3 = 0
 >>> i = i + 1
->>> li[ i%n ] # 4%3
+>>> li[ i%n ] # 4%3 = 1
 >>> i = i + 1
+>>> # 🙀 so we can repeat a number like 012 012 012
+```
+
+```python
+# A working code for above example.
+word = "hello"
+n = len(word)
+for i in range(20):
+    idx = i%n
+    char = word[idx]    
+    print(char,end="")
+# output
+# hellohellohellohello
 ```
 
 ---
@@ -316,6 +353,9 @@ Below example shows how you can remove each digit one by one in a number.
 ```
 
 - while using modulus operator, result sign will be same as denominator sign.
+- Internally it uses following formula,
+- `Divident = divisor * Quotient + reminder`
+- to find `Quotient` python uses floor division.
 
 ---
 
@@ -335,27 +375,47 @@ Below example shows how you can remove each digit one by one in a number.
 ```python
 # other examples 
 # ( try below example to try to find why we got that output )
->>> 4**2
->>> 5*4**2
->>> -3**2
->>> (-3)**2
->>> 4**0.5
->>> 4**-0.5
->>> 4**-2
+>>> 4**2    # 16
+>>> 5*4**2  # 80
+>>> -3**2   # -9
+>>> (-3)**2 #  9
+>>> 4**0.5  #  2.0
+>>> 4**-0.5 # 0.5
+>>> 4**-2   # 0.0625
 ```
 
-`usage`
+➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖➖
 
-- square root
-- cube root
-  - math.ceil
-  - math.floor
-
----
-🙀 EXTRA : 🙀 out of scope
+### Other questions
 
 ```python
->>>  -3**2
+>>> a = 2 + 3 + 5
+>>> # 2 + 3 executes first, as we have see from left to right
+>>> # 3 + 5 executes second.
+
+>>> a = 2 + 3 * 5 # 17
+>>> # 3*5 executes first as multiplication has more priority.
+
+>>> a = (2+3)*5 # 25
+>>> # () will execute first
+
+>>> a = 5/2*3   # 7.5
+>>> a = (5/2)*3 # 7.5 same result
+>>> # div then multiplication
 ```
 
----
+```python
+# one of major question on (python3 vs python2)
+>>> 5/2
+2.5 # in python 3
+>>> 5/2
+2   # in python 2
+```
+
+```python
+# below are example of floor division when interacting with int, float
+>>> 5//2   # int - int -> int
+2
+>>> 5.0//2 # int - float -> float
+2.0
+```

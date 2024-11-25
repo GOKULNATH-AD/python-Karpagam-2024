@@ -61,7 +61,7 @@ Here’s a concise guide to Python string methods, ideal for beginners:
 - **`istitle()`**: Check if it is in title case
 
   ```python
-  print("HeLLo".istitle())  # Output: True
+  print("HeLLo".istitle())  # Output: False
   print("Hello world".istitle())  # Output: False
   print("Hello World".istitle())  # Output: True
   print("Hello World ".istitle())  # Output: True

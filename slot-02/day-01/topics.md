@@ -565,14 +565,6 @@ fun(10,20,30)
 fun(10,20,30,40)
 ```
 
-```python
-def fun(k=111,*m):
-    print(k,m)
-fun() # 111 ()
-fun(10) # 111 (10)
-fun(10,20) # 111 (10,20)
-fun(10,20,30) # 111 (10,20,30)
-```
 
 - we can write var-args after default arg since var-args accepts 0 args
 - But we cannot write non-default args after default args.

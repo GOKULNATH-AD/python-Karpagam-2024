@@ -620,14 +620,6 @@ fun(a=111) # var-args cannot be called with keyword arg
 # type error: func got an unexpected keyword arg 'a' 
 ```
 
-##### summary
-
-```python
-def fun(a,b=10): pass        # a is called non-default arg | b is called default-arg
-def fun(*c): pass            # c is called var-arg
-def fun(x,y): pass           # x,y are positional-arg
-def fun(d=20,c=30): pass     # d,e are keyword-arg
-```
 
 ###### 🏷️ FINAL NOTES 🏷️
 

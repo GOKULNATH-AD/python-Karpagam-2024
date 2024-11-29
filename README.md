@@ -15,3 +15,7 @@ Lab notes :
 
 study ref:
 <https://github.com/avicreationstudio/python-problem-solving>
+
+programs/lab notes:
+
+<https://docs.google.com/document/d/1oC-lKXhCpmyCfOWcmscEuTYfWqqC0qOkWHZ7Tu-EqoM/edit?tab=t.0>

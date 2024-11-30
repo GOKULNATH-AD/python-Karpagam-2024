@@ -65,9 +65,7 @@ print("LCM:", lcm)
 
 The optimized solution for finding the **LCM (Least Common Multiple)** uses the formula:
 
-\[
-\text{LCM}(a, b) = \frac{|a \cdot b|}{\text{GCD}(a, b)}
-\]
+![formula for lcm](image-1.png)
 
 Here’s the Python implementation using this formula:
 

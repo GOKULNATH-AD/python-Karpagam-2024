@@ -35,3 +35,5 @@
     Exception handling with try, except, finally - Exception handling: Errors vs exceptions - Handling
     exceptions - Raising exception - Creating user defined exception - Debugging techniques- Unit testing
     with unit test - Writing test cases - web scraping - Data analysis project - Automation script.
+
+:::image type="content" source="python-class-syllabus.jpeg" alt-text="python syllabus":::

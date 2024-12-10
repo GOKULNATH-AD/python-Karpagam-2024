@@ -18,4 +18,4 @@ study ref:
 
 programs/lab notes:
 
-<https://docs.google.com/document/d/1oC-lKXhCpmyCfOWcmscEuTYfWqqC0qOkWHZ7Tu-EqoM/edit?tab=t.0>
+<https://docs.google.com/document/d/1wPp6ZkxiWzuQE7bvNvdg8y2j91FZTugJ-q0Rvbi-upc/edit?tab=t.0>

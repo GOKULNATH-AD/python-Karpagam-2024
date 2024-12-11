@@ -82,7 +82,7 @@ print(df.iloc[1])  # By index
 df = pd.read_csv("data.csv")
 
 # Writing to a CSV file
-df.to_csv("output.csv", index=False)
+df.to_csv("output.csv")
 ```
 
 2. Inspecting Data:

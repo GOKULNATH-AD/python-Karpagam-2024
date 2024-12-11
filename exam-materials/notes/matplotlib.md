@@ -98,7 +98,7 @@ Used to display the frequency distribution of data.
 ```python
 data = [1, 2, 2, 3, 3, 3, 4, 4, 5]
 
-plt.hist(data, bins=5, color="skyblue", edgecolor="black")
+plt.hist(data, bins=5)
 plt.title("Histogram")
 plt.xlabel("Value")
 plt.ylabel("Frequency")
@@ -115,7 +115,7 @@ Used to display proportions.
 sizes = [15, 30, 45, 10]
 labels = ["A", "B", "C", "D"]
 
-plt.pie(sizes, labels=labels, autopct='%1.1f%%')
+plt.pie(sizes, labels=labels)
 plt.title("Pie Chart")
 plt.show()
 ```

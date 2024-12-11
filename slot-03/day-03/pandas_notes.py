@@ -1,0 +1,1 @@
+Pandas is an open-source Python library widely used for data manipulation, analysis, and exploration. It provides data structures like Series and DataFrame to handle structured data efficiently.

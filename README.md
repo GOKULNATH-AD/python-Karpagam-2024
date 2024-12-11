@@ -15,4 +15,37 @@ study ref:
 
 programs/lab notes:
 
-<https://docs.google.com/document/d/1wPp6ZkxiWzuQE7bvNvdg8y2j91FZTugJ-q0Rvbi-upc/edit?tab=t.0>
+[python-lab-final pdf file](python-lab-final.pdf)
+
+## python assignment
+
+### `Assignment 1`
+
+    Write algorithm , flowchart , pseudocode , output, result  for for assignment
+    
+    1. Write a function to find the square root of the given number using looping
+    2. Write a program to check whether the year is leap year or not
+    Write a  function to find the gcd and lcm of two numbers
+    3. Write a function to check whether the number is prime or not
+    4. Write a function to return  the all the factors of a number
+    5. Write a program  print the following pattern for the given n
+        *
+       ***
+      *****
+     *******
+      
+    6. Write a function to reverse the number ,
+    7. find the sum of digits of a number
+    8. find no.of digits
+    
+---
+
+#### `Assignment 2 :` Write only the code and output
+
+1. Write a program to get the list of numbers and sort them in the descending order.
+2. Write a program to count the number of vowels in the string
+3. Write a program to count the occurrence of every character in the given string
+4. Write a program to remove duplicate elements from the list
+    - Using set
+    - Without using set
+5. Write a  program to perform all operation on two sets

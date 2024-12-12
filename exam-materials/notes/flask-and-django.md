@@ -58,20 +58,15 @@ pip install flask
 
 **Step 2: Create a Python Script (e.g., `app.py`)**
 
-```python
-from flask import Flask
-
-# Initialize the Flask application
+```pythonfrom flask import Flask
 app = Flask(__name__)
 
-# Define a route
-@app.route("/")
-def home():
-    return "Welcome to Flask!"
+@app.route('/')
+def hello_world():
+   return 'Hello World'
 
-# Run the application
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+   app.run()
 ```
 
 **Step 3: Run the Application**

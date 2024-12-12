@@ -56,7 +56,6 @@ def circle_area(r):
 import unittest 
 import circle_area as ca
 import math 
-import numpy as np
 
 class TestCircleArea(unittest.TestCase):
     def test_area(self):

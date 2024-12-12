@@ -58,7 +58,8 @@ pip install flask
 
 **Step 2: Create a Python Script (e.g., `app.py`)**
 
-```pythonfrom flask import Flask
+```python
+from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')

@@ -40,7 +40,7 @@
 
 ---
 
-# `area_of_circle.py`
+# `circle_area.py`
 
 ```python
 from math import pi 

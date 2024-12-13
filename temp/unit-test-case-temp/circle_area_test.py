@@ -14,6 +14,7 @@ class TestCircleArea(unittest.TestCase):
         self.assertAlmostEqual(ca.circle_area(2), math.pi*(2*2))
         self.assertAlmostEqual(ca.circle_area(4), math.pi*(4*4))
         self.assertAlmostEqual(ca.circle_area(3), math.pi*(3*3))
+        self.assertEqual
 
     def test_area_with_invalid_types(self):
         # check functionality of area with diff invalid datatype.

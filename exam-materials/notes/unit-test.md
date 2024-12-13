@@ -4,6 +4,8 @@
 
 ### **What is Unit Testing?**
 
+- definition: unit testing is a software developement practice that involves testing individual units of code in isolation to ensure they function as expected.
+
 - As a devoper, I want to make sure my code is running properly.
 - Usually we will manually test each and every test case.
 - Now lets consider you are manually testing every 2 days once. which is annoying.

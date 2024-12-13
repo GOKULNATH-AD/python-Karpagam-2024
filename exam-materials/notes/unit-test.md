@@ -40,19 +40,19 @@
 
 ---
 
-# `circle_area.py`
+# `circle.py`
 
 ```python
 from math import pi 
 
-def circle_area(r):
+def area(r):
     if type(r) not in [int,float]:
         raise ValueError("can only handle int, float datatype.")
     if r<0:
         raise ValueError("neg value cannot be processed")
     return pi * (r * r)
 ```   
-# `circle_area_test.py`
+# `circle_test.py`
 
 ```python
 import unittest 
@@ -60,11 +60,17 @@ import circle_area as ca
 import math 
 
 class TestCircleArea(unittest.TestCase):
-    def test_area(self):
+    def validateIntType(self):
         # check if basic functionality of area is working...
-        self.assertAlmostEqual(ca.circle_area(2), math.pi*(2*2))
-        self.assertAlmostEqual(ca.circle_area(4), math.pi*(4*4))
-        self.assertAlmostEqual(ca.circle_area(3), math.pi*(3*3))
+        self.assertEqual(ca.circle_area(2), math.pi*(2*2))
+        self.assertEqual(ca.circle_area(4), math.pi*(4*4))
+        self.assertEqual(ca.circle_area(3), math.pi*(3*3))
+
+def validateFloatType(self):
+        # check if basic functionality of area is working...
+        self.assertEqual(ca.circle_area(2.3), math.pi*(2.3*2.3))
+        self.assertEqual(ca.circle_area(4.3), math.pi*(4.3*4.3))
+        self.assertEqual(ca.circle_area(3.2), math.pi*(3.2*3.2))
 
     def test_area_with_invalid_types(self):
         # check functionality of area with diff invalid datatype.

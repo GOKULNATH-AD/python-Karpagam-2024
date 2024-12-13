@@ -19,7 +19,7 @@
 1. **Catch Errors Early:** Unit tests help catch bugs early in the development process.
 2. **Ensure Code Quality:** By testing each function or method, you ensure that your code works as intended.
 3. **Automate Testing:** Once tests are written, they can be run automatically, saving time for developers.
-4. **Regression Testing:** Unit tests can prevent previously fixed issues from reappearing when changes are made to the codebase.
+4. **Regression Testing:** a type of software testing that ensures that new changes to an application don't break existing functionality.
 
 ---
 

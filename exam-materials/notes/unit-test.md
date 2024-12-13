@@ -43,14 +43,14 @@
 # `circle.py`
 
 ```python
-from math import pi 
+import math
 
 def area(r):
     if type(r) not in [int,float]:
         raise ValueError("can only handle int, float datatype.")
     if r<0:
         raise ValueError("neg value cannot be processed")
-    return pi * (r * r)
+    return math.pi * (r * r)
 ```   
 # `circle_test.py`
 

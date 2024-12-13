@@ -59,7 +59,6 @@ import math
 
 class TestCircleArea(unittest.TestCase):
     def test_area(self):
-        unittest.main()
         # check if basic functionality of area is working...
         self.assertAlmostEqual(ca.circle_area(2), math.pi*(2*2))
         self.assertAlmostEqual(ca.circle_area(4), math.pi*(4*4))

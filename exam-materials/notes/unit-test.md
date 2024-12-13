@@ -4,6 +4,8 @@
 
 ### **What is Unit Testing?**
 
+- definition: unit testing is a software developement practice that involves testing individual units of code in isolation to ensure they function as expected.
+
 - As a devoper, I want to make sure my code is running properly.
 - Usually we will manually test each and every test case.
 - Now lets consider you are manually testing every 2 days once. which is annoying.
@@ -17,7 +19,7 @@
 1. **Catch Errors Early:** Unit tests help catch bugs early in the development process.
 2. **Ensure Code Quality:** By testing each function or method, you ensure that your code works as intended.
 3. **Automate Testing:** Once tests are written, they can be run automatically, saving time for developers.
-4. **Regression Testing:** Unit tests can prevent previously fixed issues from reappearing when changes are made to the codebase.
+4. **Regression Testing:** a type of software testing that ensures that new changes to an application don't break existing functionality.
 
 ---
 
@@ -38,46 +40,41 @@
 
 ---
 
-# `area_of_circle.py`
+# `circle.py`
 
 ```python
-from math import pi 
+import math
 
-def circle_area(r):
+def area(r):
     if type(r) not in [int,float]:
         raise ValueError("can only handle int, float datatype.")
     if r<0:
         raise ValueError("neg value cannot be processed")
-    return pi * (r * r)
+    return math.pi * (r * r)
 ```   
-# `circle_area_test.py`
+# `circle_test.py`
 
 ```python
-import unittest 
-import circle_area as ca
-import math 
+import unittest
+import circle as ca
+import math
 
-class TestCircleArea(unittest.TestCase):
-    def test_area(self):
-        unittest.main()
-        # check if basic functionality of area is working...
-        self.assertAlmostEqual(ca.circle_area(2), math.pi*(2*2))
-        self.assertAlmostEqual(ca.circle_area(4), math.pi*(4*4))
-        self.assertAlmostEqual(ca.circle_area(3), math.pi*(3*3))
+class CircleTest(unittest.TestCase):
+    def test_validateIntType(self):
+        self.assertEqual(ca.area(2), math.pi*(2*2))
+        self.assertEqual(ca.area(4), math.pi*(4*4))
+        self.assertEqual(ca.area(3), math.pi*(3*3))
 
-    def test_area_with_invalid_types(self):
-        # check functionality of area with diff invalid datatype.
-        self.assertRaises(ValueError,ca.circle_area,-2)
-        self.assertRaises(ValueError,ca.circle_area,"2")
-        self.assertRaises(ValueError,ca.circle_area,True)
-        self.assertRaises(ValueError,ca.circle_area,False)
-        self.assertRaises(ValueError,ca.circle_area,[1,2])
-        self.assertRaises(ValueError,ca.circle_area,(1,2))
+    def test_validateFloatType(self):
+        self.assertEqual(ca.area(2.3), math.pi*(2.3*2.3))
+        self.assertEqual(ca.area(4.3), math.pi*(4.3*4.3))
+        self.assertEqual(ca.area(3.2), math.pi*(3.2*3.2))
 
-    def test_area_with_valid_types(self):
-        # check functionality of area with diff invalid datatype.
-        self.assertAlmostEqual(ca.circle_area(4), math.pi*(4*4))
-        self.assertAlmostEqual(ca.circle_area(4.5), math.pi*(4.5*4.5))
-        
+    def test_handleInvalidTypes(self):
+        self.assertRaises(ValueError, ca.area, -2)
+        self.assertRaises(ValueError, ca.area, "2")
+        self.assertRaises(ValueError, ca.area, True)
+
 unittest.main()
+
 ```

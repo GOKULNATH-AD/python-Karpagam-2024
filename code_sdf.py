@@ -1,11 +1,11 @@
-class MyCustomError(Exception):
-   pass
+from flask import Flask 
+from flask_cors import CORS 
 
-a = 19
-try:
-    # Code that may raise MyCustomError
-    print('hello')
-    a = 123423
-    raise MyCustomError("An error occurred")
-except MyCustomError as e:
-    print(e)
+app = Flask(__name__)
+CORS(app)
+
+@app.route('/')
+def index():
+    return "hello world"
+
+app.run()

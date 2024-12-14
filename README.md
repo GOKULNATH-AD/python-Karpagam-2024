@@ -15,7 +15,7 @@ study ref:
 
 ## `python lab  👉 RECORD NOTES`
 
-[python-lab-record-notes pdf file](python-lab-final.pdf)
+[python-lab-record-notes pdf file](PYTHON-LAB-RECORD.pdf)
 
 ## `programs/lab/observation notes`
 

@@ -22,6 +22,6 @@
 
 - using print() function.
 - using a debugger, eg using `pdb` python module.
-- using IDEs debugger tool.
+- using IDEs ( Integrated Development Environment ) debugger tool.
 - Exception Handling
 - Unit Testing

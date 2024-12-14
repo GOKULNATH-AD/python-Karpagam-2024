@@ -13,7 +13,11 @@ a python schedule for karpagam 2024
 study ref:
 <https://github.com/avicreationstudio/python-problem-solving>
 
-programs/lab notes:
+## `python lab  👉 RECORD NOTES`
+
+[python-lab-record-notes pdf file](python-lab-final.pdf)
+
+## `programs/lab/observation notes`
 
 [python-lab-final pdf file](python-lab-final.pdf)
 

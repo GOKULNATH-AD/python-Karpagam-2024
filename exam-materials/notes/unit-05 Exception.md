@@ -79,6 +79,10 @@ finally:
 - Used to manually raise an exception.
 - Useful for handling error conditions and custom error reporting.
 
+<img src="./img-ref/raise example (1).png">
+
+<img src="./img-ref/raise example (2).png">
+
 #### example 01
 
 ```python

@@ -1,26 +1,16 @@
+class Student:
+    def __init__(self):
+        self._name = "Alice"  # Protected attribute
+
+    def _display(self): # Protected method as it is starting with one underscore.
+        print("Student Name:", self._name)  
+
+class Child(Student):
+    def show_name(self):
+        print("student name",self._name) # accessing inside its child class. ( possible )
 
 
-try:
-    str_value = "string"
-    if not str_value.isdigit():
-        raise ValueError("Cannot convert to an integer : ", str_value)
-    val = int(str_value)
-    print(val)
-except ValueError as e:
-    print("ValueError message: ", e)
-finally:
-    print("finally code executed...")
-
-
-
-
-# try:
-#     val = int("string") # Raise ValueError
-#     print(val)
-# except ValueError as e:
-#     print("Exception: ", e)
-# finally:
-#     print("finally code executed...")
-
-
-
+obj = Child()
+obj.show_name() # Output: Alice
+obj._display() # Output: Student Name: Alice
+print(obj._name) # Output: Alice

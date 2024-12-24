@@ -1,16 +1,21 @@
 class Student:
     def __init__(self):
-        self._name = "Alice"  # Protected attribute
+        self.__name = "Alice"  # Private attribute
 
-    def _display(self): # Protected method as it is starting with one underscore.
-        print("Student Name:", self._name)  
+    def __display(self):  # Private method
+        print(f"Student Name: {self.__name}")
 
-class Child(Student):
-    def show_name(self):
-        print("student name",self._name) # accessing inside its child class. ( possible )
+    def show_name(self):  # Public method to access private members
+        self.__display()
 
+# Accessing private members
+s = Student()
+# print(s.__name)  # Error: Attribute not accessible directly
+# s.__display() # Error: Method not accessible directly
+s.show_name()  
 
-obj = Child()
-obj.show_name() # Output: Alice
-obj._display() # Output: Student Name: Alice
-print(obj._name) # Output: Alice
+'''
+output:
+
+Student Name: Alice
+'''

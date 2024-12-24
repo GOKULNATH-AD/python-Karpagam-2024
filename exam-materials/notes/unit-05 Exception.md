@@ -55,6 +55,10 @@ finally:
     print("Execution completed.")
 ```
 
+<img src="./img-ref/multi-exception-eg.png">
+
+<img src="./img-ref/multi-exception-eg02.png">
+
 ---
 
 ## `8-mark`

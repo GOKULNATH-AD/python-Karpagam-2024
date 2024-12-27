@@ -68,7 +68,7 @@ Here’s a concise guide to Python string methods, ideal for beginners:
   print("   Hello World".istitle())  # Output: True
   ```
 
-- **`isupper()`**: Check if it is in title case
+- **`isupper()`**: Check if it is in upper case
 
   ```python
     print("HeLLo".isupper())  # Output: false
